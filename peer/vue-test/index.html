@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Testing the Vue framework</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="en-us">
+<script type="text/javascript" src="vue.js"></script>
+
+<body>
+
+  <div id="app">
+    {{message}}
+  </div>
+
+  <div id="app2">
+    <span v-bind:title="message">
+        Hover over for a dynamic tooltip!
+    </span>
+  </div>
+
+  <div id="app3">
+    <span v-if="seen">Can you see?</span>
+  </div>
+
+  <div id="app4">
+    <ol>
+      <li v-for="p in persons">
+        {{p.name}}
+      </li>
+    </ol>
+  </div>
+
+  <div id="app5">
+    <p>{{message}}</p>
+    <button v-on:click="reverseName">Reverse</button>
+  </div>
+
+  <div id="app6">
+    <p>{{message}}</p>
+    <input v-model="message" />
+  </div>
+
+  <div id="app7">
+    <ol>
+      <todo-item v-for="item in shopping" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+    </ol>
+  </div>
+
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
