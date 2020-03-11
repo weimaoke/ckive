@@ -12,7 +12,7 @@
   "scripts": {},
   "devDependencies": {},
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "peerjs": "^0.3.16",
     "vue": "^2.5.17",
     "webrtc-adapter": "^6.3.2"
